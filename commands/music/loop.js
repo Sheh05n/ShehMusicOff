@@ -22,7 +22,7 @@ module.exports = {
 
             const success = queue.setRepeatMode(queue.repeatMode === 0 ? QueueRepeatMode.TRACK : QueueRepeatMode.OFF);
 
-            return message.channel.send(success ? `Repeat mode **${queue.repeatMode === 0 ? 'tắt' : 'bật'}** queue bắt đầu` : `Something went wrong ${message.author}... try again ? ❌`);
+            return message.channel.send(success ? `Chế độ lặp **${queue.repeatMode === 0 ? 'tắt' : 'bật'}** queue bắt đầu` : `Something went wrong ${message.author}... try again ? ❌`);
         };
     },
 };

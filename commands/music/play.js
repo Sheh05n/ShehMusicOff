@@ -7,7 +7,7 @@ module.exports = {
     voiceChannel: true,
 
     async execute(client, message, args) {
-        if (!args[0]) return message.channel.send(`Tìm đúng hộ bố mày ${message.author}.`);
+        if (!args[0]) return message.channel.send(`Tìm đúng hộ bố mày viết như con cặc làm bố mày đéo ra được kết quả lồn mẹ ${message.author}.`);
 
         const res = await player.search(args.join(' '), {
             requestedBy: message.member,
